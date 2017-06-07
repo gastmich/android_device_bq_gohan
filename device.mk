@@ -232,6 +232,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     ueventd.qcom.rc
 
+# RIL
+PRODUCT_PACKAGES += \
+    libshim_ril 
+
 PRODUCT_PACKAGES += \
     rild_socket
 
