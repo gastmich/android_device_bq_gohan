@@ -127,7 +127,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8952
+    gps.msm8952 \
+		libshims_get_process_name \
 
 PRODUCT_PACKAGES += \
     flp.conf \
