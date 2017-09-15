@@ -234,7 +234,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libshim_ril 
+    libshim_ril
 
 PRODUCT_PACKAGES += \
     rild_socket
@@ -292,7 +292,8 @@ PRODUCT_PACKAGES += \
 		android.hardware.audio@2.0-impl \
 	  android.hardware.audio.effect@2.0-impl \
 		android.hardware.broadcastradio@1.0-impl \
-		android.hardware.soundtrigger@2.0-impl
+		android.hardware.soundtrigger@2.0-impl \
+		android.hardware.memtrack@1.0-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
