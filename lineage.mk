@@ -32,9 +32,12 @@ PRODUCT_MANUFACTURER := bq
 PRODUCT_MODEL := Aquaris X5 Plus
 TARGET_VENDOR := bq
 
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
+
 # Set product device & name
 PRODUCT_BUILD_PROP_OVERRIDES += \
-   TARGET_DEVICE=Aquaris_X5_Plus PRODUCT_NAME=Aquaris_X5_Plus
+   TARGET_DEVICE=Aquaris_X5_Plus \
+	 PRODUCT_NAME=Aquaris_X5_Plus
 
 PRODUCT_GMS_CLIENTID_BASE := android-bq
 
