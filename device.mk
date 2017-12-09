@@ -304,7 +304,8 @@ PRODUCT_PACKAGES += \
 		android.hardware.memtrack@1.0-impl \
     android.hardware.renderscript@1.0-impl \
 		android.hardware.drm@1.0-impl \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.0-service \
+		android.system.net.netd@1.0
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
