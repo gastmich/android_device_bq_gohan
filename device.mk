@@ -115,6 +115,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite
 
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd \
@@ -306,7 +307,9 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
 		android.hardware.drm@1.0-impl \
     android.hardware.usb@1.0-service \
-		android.system.net.netd@1.0
+		android.system.net.netd@1.0 \
+		android.hardware.drm@1.0-impl \
+		android.hardware.drm@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
