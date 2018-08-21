@@ -446,7 +446,6 @@ on post-fs-data
 service qfintverify /sbin/qfintverify
     user root
     class core
-    seclabel u:r:qfips:s0
     oneshot
 
 service qcomsysd /system/bin/qcom-system-daemon
@@ -535,7 +534,6 @@ service qcom-sh /system/bin/sh /init.qcom.sh
     oneshot
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
-    seclabel u:r:bluetooth_loader:s0
     class late_start
     user bluetooth
     group bluetooth net_bt_admin
@@ -668,7 +666,6 @@ service ril-daemon2 /system/bin/rild -c 2
 service charger /charger
     class charger
     group graphics system
-    seclabel u:r:healthd:s0
 
 service hvdcp /system/bin/hvdcp
     class main
@@ -704,7 +701,6 @@ service gx_fpd /system/bin/gx_fpd
     class late_start
     user system
     group system
-    seclabel u:r:gx_fpd:s0
 
 service fingerprintd /system/bin/fingerprintd
     class late_start
