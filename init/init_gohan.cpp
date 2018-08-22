@@ -29,6 +29,8 @@
 
 #include "property_service.h"
 
+using android::init::property_set;
+
 char const *heapstartsize;
 char const *heapgrowthlimit;
 char const *heapsize;
@@ -66,4 +68,3 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", "8m");
 }
-
