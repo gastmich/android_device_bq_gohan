@@ -111,6 +111,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     memtrack.msm8952
 
+# DRM
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd \
@@ -298,7 +302,9 @@ PRODUCT_PACKAGES += \
 		android.hardware.broadcastradio@1.0-impl \
 		android.hardware.soundtrigger@2.0-impl \
 		android.hardware.memtrack@1.0-impl \
-    android.hardware.renderscript@1.0-impl
+    android.hardware.renderscript@1.0-impl \
+		android.hardware.drm@1.0-impl \
+    android.hardware.usb@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
